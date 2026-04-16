@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;700&family=Manrope:wght@400;500;700&display=swap');
+
+@theme {
+  --font-serif: "Noto Serif Bengali", serif;
+  --font-sans: "Manrope", sans-serif;
+
+  --color-primary: #553722;
+  --color-primary-container: #6F4E37;
+  --color-secondary-container: #E1E1C9;
+  --color-tertiary: #284339;
+  --color-surface: #FBF9F8;
+  --color-surface-container-low: #F6F3F2;
+  --color-surface-container-highest: #E4E2E1;
+  --color-outline-variant: #D4C3BA;
+  --color-on-surface-variant: #50453E;
+  --color-secondary-fixed: #E4E4CC;
+  --color-on-secondary-fixed-variant: #474836;
+
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-3xl: 3rem;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface-variant font-sans antialiased;
+  }
+}
