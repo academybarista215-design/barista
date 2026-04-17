@@ -11,7 +11,7 @@ export default function TrainingProcess() {
   return (
     <section className="py-24 bg-surface">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-[clamp(20px,4vw,36px)] font-serif font-bold text-primary mb-20 text-center leading-[1.4]">আমাদের প্রশিক্ষণ ধাপসমূহ</h2>
+        <h2 className="text-[clamp(1.4rem,4vw,2.2rem)] font-serif font-bold text-primary mb-20 text-center leading-[1.6]">আমাদের প্রশিক্ষণ ধাপসমূহ</h2>
         <div className="relative flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-4">
           <div className="absolute top-1/2 left-0 w-full h-0.5 bg-outline-variant/30 hidden lg:block -translate-y-1/2"></div>
           
@@ -20,8 +20,8 @@ export default function TrainingProcess() {
               <div className={`w-20 h-20 rounded-full flex items-center justify-center text-white mb-6 shadow-lg group-hover:scale-110 transition-transform ${step.highlight ? 'bg-tertiary' : 'bg-primary'}`}>
                 {step.icon}
               </div>
-              <h4 className="text-[clamp(16px,3vw,28px)] font-bold text-primary leading-[1.4]">{step.title}</h4>
-              <p className="text-on-surface-variant text-[clamp(14px,2.5vw,20px)] mt-2 leading-[1.4]">{step.description}</p>
+              <h4 className="text-[clamp(1.2rem,3vw,1.6rem)] font-bold text-primary leading-[1.6]">{step.title}</h4>
+              <p className="text-on-surface-variant text-[clamp(1rem,2vw,1.1rem)] mt-2 leading-[1.6] text-center">{step.description}</p>
             </div>
           ))}
         </div>

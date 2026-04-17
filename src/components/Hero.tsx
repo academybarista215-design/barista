@@ -19,7 +19,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-[clamp(20px,4vw,36px)] font-serif font-semibold text-primary mb-6 md:mb-8 leading-[1.4] max-w-4xl mx-auto"
+          className="text-[clamp(2rem,6vw,3.5rem)] font-serif font-semibold text-primary mb-6 md:mb-8 leading-[1.6] max-w-4xl mx-auto"
         >
           আপনার ক্যারিয়ার শুরু হোক একজন <span className="text-tertiary">প্রফেশনাল বারিস্টা</span> হিসেবে
         </motion.h1>
@@ -28,7 +28,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-[clamp(16px,3vw,28px)] text-on-surface-variant max-w-2xl mx-auto mb-10 leading-[1.4] font-medium"
+          className="text-[clamp(1.1rem,3vw,1.6rem)] text-on-surface-variant max-w-2xl mx-auto mb-10 leading-[1.6] font-medium"
         >
           Hands-on training, real coffee machines, এবং অভিজ্ঞ প্রশিক্ষকের মাধ্যমে সম্পূর্ণ Barista কোর্স যা আপনাকে বিশ্বমানের দক্ষতায় গড়ে তুলবে।
         </motion.p>

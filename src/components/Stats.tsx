@@ -18,10 +18,10 @@ export default function Stats() {
               className="bg-white p-8 rounded-3xl text-center transition-transform hover:-translate-y-2 duration-300 shadow-sm"
             >
               <div className="flex items-center justify-center gap-1 mb-2">
-                <h3 className="text-[clamp(20px,4vw,36px)] font-serif font-bold text-primary leading-[1.4]">{stat.value}</h3>
+                <h3 className="text-[clamp(1.4rem,4vw,2.2rem)] font-serif font-bold text-primary leading-[1.6]">{stat.value}</h3>
                 {stat.icon}
               </div>
-              <p className="text-on-surface-variant font-medium text-[clamp(14px,2.5vw,20px)] leading-[1.4]">{stat.label}</p>
+              <p className="text-on-surface-variant font-medium text-[clamp(0.9rem,2vw,1.1rem)] leading-[1.6]">{stat.label}</p>
             </div>
           ))}
         </div>

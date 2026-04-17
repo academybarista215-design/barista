@@ -25,7 +25,7 @@ export default function Courses() {
   return (
     <section className="py-24 bg-surface-container-low overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-[clamp(20px,4vw,36px)] font-serif font-bold text-primary mb-12 text-center leading-[1.4]">আমাদের কোর্স সমূহ</h2>
+        <h2 className="text-[clamp(1.4rem,4vw,2.2rem)] font-serif font-bold text-primary mb-12 text-center leading-[1.6]">আমাদের কোর্স সমূহ</h2>
         <div className="flex overflow-x-auto pb-8 gap-8 snap-x no-scrollbar">
           {courses.map((course, index) => (
             <motion.div 
@@ -43,10 +43,10 @@ export default function Courses() {
               </div>
               <div className="p-6 md:p-8">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-[clamp(16px,2.5vw,24px)] font-bold text-primary leading-[1.4]">{course.title}</h3>
+                  <h3 className="text-[clamp(1.2rem,2.5vw,1.6rem)] font-bold text-primary leading-[1.6] transition-colors group-hover:text-tertiary">{course.title}</h3>
                   <span className="bg-secondary-fixed text-on-secondary-fixed-variant px-3 py-1 rounded-full text-xs font-bold">{course.tag}</span>
                 </div>
-                <p className="text-on-surface-variant mb-6 text-[clamp(14px,2vw,18px)] leading-[1.4] line-clamp-3">{course.description}</p>
+                <p className="text-on-surface-variant mb-6 text-[clamp(0.95rem,2vw,1.1rem)] leading-[1.6] line-clamp-3">{course.description}</p>
                 <button className="w-full py-3 rounded-xl border border-primary/20 text-primary font-bold hover:bg-primary hover:text-white transition-all">
                   বিস্তারিত
                 </button>

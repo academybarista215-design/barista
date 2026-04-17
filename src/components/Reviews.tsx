@@ -29,7 +29,7 @@ export default function Reviews() {
   return (
     <section className="py-24 bg-surface overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 mb-16">
-        <h2 className="text-[clamp(20px,4vw,36px)] font-serif font-bold text-primary leading-[1.4]">শিক্ষার্থীদের মতামত</h2>
+        <h2 className="text-[clamp(1.4rem,4vw,2.2rem)] font-serif font-bold text-primary leading-[1.6]">শিক্ষার্থীদের মতামত</h2>
       </div>
 
       <div className="relative flex overflow-hidden">
@@ -53,7 +53,7 @@ export default function Reviews() {
                   <Star key={i} className="w-4 h-4 fill-yellow-500 text-yellow-500" />
                 ))}
               </div>
-              <p className="text-on-surface-variant mb-8 italic relative z-10 whitespace-normal text-[clamp(14px,2.5vw,20px)] leading-[1.4]">"{review.text}"</p>
+              <p className="text-on-surface-variant mb-8 italic relative z-10 whitespace-normal text-[clamp(1rem,2vw,1.1rem)] leading-[1.6]">"{review.text}"</p>
               <div className="flex items-center gap-4 relative z-10">
                 <img 
                   src={review.image} 

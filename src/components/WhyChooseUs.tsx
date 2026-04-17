@@ -30,9 +30,9 @@ export default function WhyChooseUs() {
         <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
             <p className="text-tertiary font-bold tracking-widest uppercase text-sm mb-4">কেন আমাদের বেছে নেবেন</p>
-            <h2 className="text-[clamp(20px,4vw,36px)] font-serif font-bold text-primary leading-[1.4]">অভিজ্ঞতার সাথে শেখার সেরা পরিবেশ</h2>
+            <h2 className="text-[clamp(1.4rem,4vw,2.2rem)] font-serif font-bold text-primary leading-[1.6]">অভিজ্ঞতার সাথে শেখার সেরা পরিবেশ</h2>
           </div>
-          <p className="text-on-surface-variant max-w-sm text-[clamp(14px,2.5vw,20px)] leading-[1.4]">আমরা শুধু কফি বানানো শেখাই না, আমরা আপনাকে একজন দক্ষ প্রফেশনাল হিসেবে গড়ে তুলি।</p>
+          <p className="text-on-surface-variant max-w-sm text-[clamp(1rem,2vw,1.2rem)] leading-[1.6]">আমরা শুধু কফি বানানো শেখাই না, আমরা আপনাকে একজন দক্ষ প্রফেশনাল হিসেবে গড়ে তুলি।</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -44,8 +44,8 @@ export default function WhyChooseUs() {
               <div className="text-primary group-hover:text-secondary-fixed mb-6 block transition-colors">
                 {feature.icon}
               </div>
-              <h4 className="text-[clamp(16px,3vw,28px)] font-bold mb-4 leading-[1.4]">{feature.title}</h4>
-              <p className="opacity-80 text-[clamp(14px,2.5vw,20px)] leading-[1.4]">{feature.description}</p>
+              <h4 className="text-[clamp(1.2rem,3vw,1.6rem)] font-bold mb-4 leading-[1.6]">{feature.title}</h4>
+              <p className="opacity-80 text-[clamp(0.9rem,2vw,1.1rem)] leading-[1.6]">{feature.description}</p>
             </div>
           ))}
         </div>

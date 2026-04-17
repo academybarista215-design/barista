@@ -12,7 +12,7 @@ export default function SkillsGrid() {
     <section className="py-24 bg-surface-container-low">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col items-center text-center mb-16">
-          <h2 className="text-[clamp(20px,4vw,36px)] font-serif font-bold text-primary mb-4 leading-[1.4]">যেসব দক্ষতায় আপনি সেরা হবেন</h2>
+          <h2 className="text-[clamp(1.4rem,4vw,2.2rem)] font-serif font-bold text-primary mb-4 leading-[1.6]">যেসব দক্ষতায় আপনি সেরা হবেন</h2>
           <div className="h-1 w-24 bg-tertiary rounded-full"></div>
         </div>
 
@@ -25,7 +25,7 @@ export default function SkillsGrid() {
               <div className="text-primary mb-4">
                 {skill.icon}
               </div>
-              <span className="font-bold text-primary text-[clamp(16px,3vw,28px)] leading-[1.4]">{skill.label}</span>
+              <span className="font-bold text-primary text-[clamp(1.1rem,2.5vw,1.4rem)] leading-[1.6]">{skill.label}</span>
             </div>
           ))}
         </div>

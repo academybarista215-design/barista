@@ -17,18 +17,18 @@ export default function SuccessStory() {
               <div className="h-px w-12 bg-white/30"></div>
               <span className="text-secondary-fixed font-bold tracking-widest uppercase text-sm">সফলতার গল্প</span>
             </div>
-            <h2 className="text-[clamp(20px,4vw,36px)] font-serif font-bold mb-6 leading-[1.4]">
+            <h2 className="text-[clamp(1.4rem,4vw,2.2rem)] font-serif font-bold mb-6 leading-[1.6]">
               "অ্যাকাডেমির প্র্যাকটিক্যাল ট্রেনিং আমাকে আজ ঢাকার টপ ক্যাফেতে চাকরি পাইয়ে দিয়েছে"
             </h2>
-            <p className="text-[clamp(16px,3vw,28px)] opacity-90 mb-8 leading-[1.4]">— রহিম ইসলাম (প্রাক্তন শিক্ষার্থী)</p>
+            <p className="text-[clamp(1.1rem,3vw,1.6rem)] opacity-90 mb-8 leading-[1.6]">— রহিম ইসলাম (প্রাক্তন শিক্ষার্থী)</p>
             
             <div className="grid grid-cols-2 gap-6 pt-8 border-t border-white/10">
               <div>
-                <p className="text-[clamp(20px,4vw,36px)] font-bold text-secondary-fixed leading-[1.4]">৩ মাস</p>
+                <p className="text-[clamp(1.4rem,4vw,2.2rem)] font-bold text-secondary-fixed leading-[1.6]">৩ মাস</p>
                 <p className="opacity-70 text-sm">প্রশিক্ষণ সময়কাল</p>
               </div>
               <div>
-                <p className="text-[clamp(20px,4vw,36px)] font-bold text-secondary-fixed leading-[1.4]">১০০%</p>
+                <p className="text-[clamp(1.4rem,4vw,2.2rem)] font-bold text-secondary-fixed leading-[1.6]">১০০%</p>
                 <p className="opacity-70 text-sm">আত্মবিশ্বাস</p>
               </div>
             </div>
