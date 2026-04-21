@@ -9,19 +9,24 @@ export default function TrainingProcess() {
   ];
 
   return (
-    <section className="py-24 bg-surface">
+    <section className="py-24 bg-surface relative">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-[clamp(1.4rem,4vw,2.2rem)] font-serif font-bold text-primary mb-20 text-center leading-[1.6]">আমাদের প্রশিক্ষণ ধাপসমূহ</h2>
-        <div className="relative flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-4">
-          <div className="absolute top-1/2 left-0 w-full h-0.5 bg-outline-variant/30 hidden lg:block -translate-y-1/2"></div>
+        <div className="text-center mb-20">
+          <p className="text-primary font-bold tracking-widest uppercase text-sm mb-4">Step-by-Step Training</p>
+          <h2 className="text-[clamp(1.8rem,4vw,2.8rem)] font-serif font-bold text-on-surface leading-[1.3]">আমাদের প্রশিক্ষণ ধাপসমূহ</h2>
+        </div>
+        <div className="relative flex flex-col lg:flex-row justify-between items-center gap-16 lg:gap-4">
+          <div className="absolute top-10 left-0 w-full h-[1px] bg-white/10 hidden lg:block"></div>
           
           {steps.map((step, index) => (
-            <div key={index} className="relative z-10 flex flex-col items-center group">
-              <div className={`w-20 h-20 rounded-full flex items-center justify-center text-white mb-6 shadow-lg group-hover:scale-110 transition-transform ${step.highlight ? 'bg-tertiary' : 'bg-primary'}`}>
-                {step.icon}
+            <div key={index} className="relative z-10 flex flex-col items-center group max-w-xs">
+              <div className={`w-20 h-20 rounded-[2rem] flex items-center justify-center text-white mb-6 shadow-2xl transition-all group-hover:scale-110 group-hover:-translate-y-2 group-hover:shadow-primary/20 ${step.highlight ? 'bg-primary shadow-primary/30' : 'bg-[#1c100b] border border-white/5'}`}>
+                <div className={`${step.highlight ? 'text-white' : 'text-primary'}`}>
+                  {step.icon}
+                </div>
               </div>
-              <h4 className="text-[clamp(1.2rem,3vw,1.6rem)] font-bold text-primary leading-[1.6]">{step.title}</h4>
-              <p className="text-on-surface-variant text-[clamp(1rem,2vw,1.1rem)] mt-2 leading-[1.6] text-center">{step.description}</p>
+              <h4 className="text-[clamp(1.3rem,3vw,1.5rem)] font-bold text-on-surface leading-tight mb-3 transition-colors group-hover:text-primary">{step.title}</h4>
+              <p className="text-on-surface-variant text-[clamp(0.95rem,2vw,1rem)] leading-relaxed text-center group-hover:text-on-surface transition-colors">{step.description}</p>
             </div>
           ))}
         </div>

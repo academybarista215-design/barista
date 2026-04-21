@@ -5,17 +5,23 @@
   --font-serif: "Noto Serif Bengali", serif;
   --font-sans: "Manrope", sans-serif;
 
-  --color-primary: #553722;
-  --color-primary-container: #6F4E37;
-  --color-secondary-container: #E1E1C9;
-  --color-tertiary: #284339;
-  --color-surface: #FBF9F8;
-  --color-surface-container-low: #F6F3F2;
-  --color-surface-container-highest: #E4E2E1;
-  --color-outline-variant: #D4C3BA;
-  --color-on-surface-variant: #50453E;
-  --color-secondary-fixed: #E4E4CC;
-  --color-on-secondary-fixed-variant: #474836;
+  /* Dark Brown Leather / Coffee Theme with Orange Accents */
+  --color-primary: #f97316; /* Orange accent */
+  --color-primary-container: #ea580c; /* Darker orange */
+  --color-secondary-container: #432818; /* Dark roasted coffee */
+  --color-tertiary: #bb9457; /* Light brown / latte */
+  
+  --color-surface: #140d0a; /* Very dark espresso base */
+  --color-surface-container-low: #221612; 
+  --color-surface-container-highest: #38241d; 
+  
+  --color-outline-variant: #5a3d31;
+  
+  --color-on-surface: #fdf8f5; /* Creamy white text */
+  --color-on-surface-variant: #d4bdae; /* Muted creamy text */
+  
+  --color-secondary-fixed: #fb923c; /* Light orange */
+  --color-on-secondary-fixed-variant: #1c100b; /* Dark text on bright bg */
 
   --radius-xl: 1.5rem;
   --radius-2xl: 2rem;
@@ -24,6 +30,6 @@
 
 @layer base {
   body {
-    @apply bg-surface text-on-surface-variant font-sans antialiased;
+    @apply bg-surface text-on-surface font-sans antialiased;
   }
 }

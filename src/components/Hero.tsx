@@ -1,34 +1,59 @@
 import { motion } from "motion/react";
-import { Star, Coffee } from "lucide-react";
+import { Star, Coffee, Tag } from "lucide-react";
+import heroBg from "../assets/hero-bg.png";
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden bg-surface">
-      <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
+    <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
+      {/* Background Image with Dark Brown/Coffee Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={heroBg}
+          alt="Steaming coffee cup with latte art" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-[#140d0a]/80 backdrop-blur-[2px]"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#140d0a] via-[#140d0a]/50 to-transparent"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 text-center relative z-10 w-full mt-10 md:mt-0">
+        {/* Big Red Badge */}
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-red-600 text-white text-sm md:text-lg font-bold uppercase tracking-widest mb-8 shadow-[0_0_30px_rgba(220,38,38,0.6)] border border-red-500/50"
+        >
+          <Tag className="w-5 h-5 fill-current" />
+          <span>30% OFF!</span>
+        </motion.div>
+
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant text-sm font-semibold mb-6"
+          className="flex justify-center mb-6"
         >
-          <Star className="w-4 h-4 fill-current" />
-          <span>Dhaka-র সেরা Barista Training Academy</span>
+          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant text-sm md:text-base font-bold shadow-lg border border-primary/20">
+            <Star className="w-4 h-4 md:w-5 md:h-5 fill-current text-primary-container" />
+            <span>Professional Barista Training Academy Dhaka</span>
+          </div>
         </motion.div>
 
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-[clamp(2rem,6vw,3.5rem)] font-serif font-semibold text-primary mb-6 md:mb-8 leading-[1.6] max-w-4xl mx-auto"
+          className="text-[clamp(2.5rem,5vw,4.5rem)] font-serif font-bold text-on-surface mb-8 leading-[1.3] max-w-5xl mx-auto drop-shadow-2xl"
         >
-          আপনার ক্যারিয়ার শুরু হোক একজন <span className="text-tertiary">প্রফেশনাল বারিস্টা</span> হিসেবে
+          <span className="text-secondary-fixed">আপনার ক্যারিয়ার</span> শুরু হোক একজন <span className="text-primary bg-[#140d0a]/60 px-4 py-2 rounded-2xl inline-block mt-2 md:mt-0 backdrop-blur-md border border-primary/30">প্রফেশনাল বারিস্তা</span> হিসেবে
         </motion.h1>
 
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-[clamp(1.1rem,3vw,1.6rem)] text-on-surface-variant max-w-2xl mx-auto mb-10 leading-[1.6] font-medium"
+          className="text-[clamp(1.1rem,3vw,1.5rem)] text-on-surface-variant max-w-3xl mx-auto mb-12 leading-[1.6] font-medium drop-shadow-md"
         >
           Hands-on training, real coffee machines, এবং অভিজ্ঞ প্রশিক্ষকের মাধ্যমে সম্পূর্ণ Barista কোর্স যা আপনাকে বিশ্বমানের দক্ষতায় গড়ে তুলবে।
         </motion.p>
@@ -37,61 +62,14 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row items-center justify-center gap-5"
         >
-          <button className="w-full sm:w-auto bg-gradient-to-r from-primary to-primary-container text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:opacity-90 transition-opacity">
+          <button className="w-full sm:w-auto bg-primary hover:bg-primary-container text-white px-10 py-4 rounded-xl text-lg font-bold shadow-xl shadow-primary/30 transition-all hover:-translate-y-1">
             Enroll Now
           </button>
-          <button className="w-full sm:w-auto bg-surface-container-highest text-primary px-8 py-4 rounded-xl text-lg font-semibold hover:bg-surface-container-high transition-colors">
-            কোর্স দেখুন
+          <button className="w-full sm:w-auto bg-surface-container-highest/80 backdrop-blur-md border border-outline-variant text-on-surface px-10 py-4 rounded-xl text-lg font-bold hover:bg-surface-container-low transition-all hover:border-primary">
+            View Courses
           </button>
-        </motion.div>
-
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-12 md:mt-16 relative h-[350px] md:h-[600px] w-full max-w-5xl mx-auto px-4 md:px-0"
-        >
-          <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-surface to-transparent z-20"></div>
-          <img 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJAVyLNbblVidt3CIR_afT7Ojwc8uyZCwoAA5uJW9Vlhw7B09rG6yHk3hWBZZrJHA2fKRca-7MfOWGCvonpn8XbLwrzkem9kctjBJFvnj6RzymnC8NFbWHy4EWdNyoQZlvHjuLyP6x8KbbR_BvhwamS6IyrHTyYfacR0vU8GZfGS_JtDy70BPumWDUglCoavrE8iujAgbxiFwd0P3i2uPWwzb0OhgkhwBdXEF4C6CikjfMBEo1QGywBXFQdNZXtpjwmnMVm7GVRI4" 
-            alt="Professional coffee making" 
-            className="w-full h-full object-cover rounded-[2rem] shadow-2xl ring-1 ring-primary/5"
-            referrerPolicy="no-referrer"
-          />
-
-          {/* Floating Elements */}
-          <motion.div 
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute -top-10 -left-6 md:left-0 bg-white p-3 rounded-2xl shadow-xl flex items-center gap-3 z-30"
-          >
-            <img 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdgFgRC9D2zfpTEZ91fpxERwh3Yd7RLqWUilQTpN-8LAYE2pREzLy-rJhtM6X68FR68tE3IM2mW_K2XtZ7Vwq93V7IoPYA9SPjFDztEGnm1XEX_9R6_laXAgtGkXj_Babri323tiEo_A8_t1x4P15WMpXeymkmR8Rht4p93J5l3UV_0FVnb8ywMExNufck999wmGfHPjYvVBESSIXJVOP1pODIPvMzTSWCbCrUzHNROsg5YlWzH_beWiActsLtPIEyaWcBYD48LRc" 
-              alt="Student" 
-              className="w-12 h-12 rounded-full object-cover"
-              referrerPolicy="no-referrer"
-            />
-            <div className="text-left">
-              <p className="text-xs font-bold">১০+ নতুন শিক্ষার্থী</p>
-              <p className="text-[10px] text-on-surface-variant">আজ যোগ দিয়েছেন</p>
-            </div>
-          </motion.div>
-
-          <motion.div 
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute top-1/2 -right-6 md:right-0 bg-white p-3 rounded-2xl shadow-xl flex items-center gap-3 z-30"
-          >
-            <div className="bg-secondary-fixed p-2 rounded-lg">
-              <Coffee className="w-5 h-5 text-primary" />
-            </div>
-            <div className="text-left">
-              <p className="text-xs font-bold">Master Latte Art</p>
-              <p className="text-[10px] text-on-surface-variant">৫টি নতুন মডিউল</p>
-            </div>
-          </motion.div>
         </motion.div>
       </div>
     </section>

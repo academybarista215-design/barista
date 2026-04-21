@@ -9,13 +9,13 @@ export default function Stats() {
   ];
 
   return (
-    <section className="py-20 bg-surface-container-low">
+    <section className="py-20 bg-surface-container-low border-y border-white/5">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat, index) => (
             <div 
               key={index} 
-              className="bg-white p-8 rounded-3xl text-center transition-transform hover:-translate-y-2 duration-300 shadow-sm"
+              className="bg-[#1c100b] p-8 rounded-3xl text-center transition-transform hover:-translate-y-2 duration-300 shadow-xl border border-white/5"
             >
               <div className="flex items-center justify-center gap-1 mb-2">
                 <h3 className="text-[clamp(1.4rem,4vw,2.2rem)] font-serif font-bold text-primary leading-[1.6]">{stat.value}</h3>
