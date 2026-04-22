@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="md:col-span-5 flex flex-col items-center md:items-start gap-6 text-center md:text-left">
           <img 
             src={logo} 
-            alt="Professional Barista Training Academy" 
+            alt="Professional Barista Training Academy Dhaka - Best Barista Course in Bangladesh" 
             className="h-16 w-auto object-contain"
           />
           <p className="text-on-surface-variant text-base max-w-sm leading-relaxed font-medium">
@@ -53,8 +53,9 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex flex-col items-center md:items-end gap-1">
-            <p className="text-on-surface font-semibold">Dhaka, Bangladesh</p>
-            <p className="text-on-surface-variant text-sm">Near Banani 11, Road 27</p>
+            <p className="text-on-surface font-semibold">Mirpur-11, Dhaka</p>
+            <p className="text-on-surface-variant text-sm">House-21, Road-01, Block-B, Mirpur-11, Dhaka-1216</p>
+            <p className="text-primary font-bold mt-2">Phone: 01701-959331</p>
           </div>
         </div>
 

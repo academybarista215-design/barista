@@ -27,7 +27,7 @@ export default function Courses() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-primary font-bold tracking-widest uppercase text-sm mb-4">Our Programs</p>
-          <h2 className="text-[clamp(1.8rem,4vw,2.8rem)] font-serif font-bold text-on-surface leading-[1.3]">আমাদের কোর্স সমূহ</h2>
+          <h2 className="text-[clamp(1.8rem,4vw,2.8rem)] font-serif font-bold text-on-surface leading-[1.3]">Professional Barista Course Dhaka - আমাদের কোর্স সমূহ</h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {courses.map((course, index) => (
@@ -40,8 +40,9 @@ export default function Courses() {
                 <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-surface to-transparent z-10"></div>
                 <img 
                   src={course.image} 
-                  alt={course.title} 
+                  alt={`barista training course dhaka - ${course.title}`} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
                   referrerPolicy="no-referrer"
                 />
                 <span className="absolute top-6 right-6 z-20 bg-primary/90 backdrop-blur-md text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">{course.tag}</span>

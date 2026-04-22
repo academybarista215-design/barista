@@ -46,7 +46,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-[clamp(2.5rem,5vw,4.5rem)] font-serif font-bold text-on-surface mb-8 leading-[1.3] max-w-5xl mx-auto drop-shadow-2xl"
         >
-          <span className="text-secondary-fixed">আপনার ক্যারিয়ার</span> শুরু হোক একজন <span className="text-primary bg-[#140d0a]/60 px-4 py-2 rounded-2xl inline-block mt-2 md:mt-0 backdrop-blur-md border border-primary/30">প্রফেশনাল বারিস্তা</span> হিসেবে
+          Professional Barista Course in Dhaka 2026 - <br/>
+          <span className="text-secondary-fixed">আপনার ক্যারিয়ার</span> শুরু হোক <span className="text-primary bg-[#140d0a]/60 px-4 py-2 rounded-2xl inline-block mt-2 md:mt-0 backdrop-blur-md border border-primary/30">প্রফেশনাল বারিস্তা</span> হিসেবে
         </motion.h1>
 
         <motion.p 

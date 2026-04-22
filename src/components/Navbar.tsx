@@ -8,7 +8,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <img 
             src={logo} 
-            alt="Professional Barista Training Academy" 
+            alt="Professional Barista Training Academy Dhaka - Barista Course Mirpur" 
             className="h-12 w-auto object-contain"
           />
           <div className="hidden lg:block">
