@@ -9,7 +9,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Stats from "./components/Stats";
 import WhyChooseUs from "./components/WhyChooseUs";
-import Courses from "./components/Courses";
+import CoursesPricing from "./components/CoursesPricing";
+import Trainer from "./components/Trainer";
 import Accommodation from "./components/Accommodation";
 import MocktailCourse from "./components/MocktailCourse";
 import SuccessStory from "./components/SuccessStory";
@@ -27,7 +28,8 @@ export default function App() {
         <Hero />
         <Stats />
         <WhyChooseUs />
-        <Courses />
+        <CoursesPricing />
+        <Trainer />
         <Accommodation />
         <MocktailCourse />
         <SuccessStory />

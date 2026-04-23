@@ -7,7 +7,7 @@ export default function Accommodation() {
     <section className="py-24 bg-surface-container-low relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -15,9 +15,9 @@ export default function Accommodation() {
             className="relative"
           >
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl">
-              <img 
-                src={hostelRoom} 
-                alt="safe and clean accommodation for baristas at mirpur-11 hostel" 
+              <img
+                src={hostelRoom}
+                alt="safe and clean accommodation for baristas at mirpur-11 hostel"
                 className="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-700"
                 loading="lazy"
               />
@@ -27,7 +27,7 @@ export default function Accommodation() {
                 <h3 className="text-2xl font-bold">Mirpur-11 এ নিরাপদ ও পরিষ্কার হোস্টেল সুবিধা</h3>
               </div>
             </div>
-            
+
             {/* Decorative badge */}
             <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-3xl shadow-xl z-20 hidden md:block">
               <div className="flex items-center gap-4">
@@ -40,7 +40,7 @@ export default function Accommodation() {
             </div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -51,7 +51,7 @@ export default function Accommodation() {
               Accommodation Facility
             </span>
             <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-serif font-bold text-on-surface leading-tight mb-8">
-              থাকা-খাওয়া সহ <br/>
+              থাকা-খাওয়া সহ <br />
               <span className="text-primary">সম্পূর্ণ আবাসন ব্যবস্থা</span>
             </h2>
             <p className="text-on-surface-variant text-[clamp(1rem,2.5vw,1.2rem)] leading-relaxed mb-8">
