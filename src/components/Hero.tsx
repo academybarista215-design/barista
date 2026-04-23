@@ -1,75 +1,84 @@
 import { motion } from "motion/react";
-import { Star, Coffee, Tag } from "lucide-react";
+import { CheckCircle, ArrowRight } from "lucide-react";
 import heroBg from "../assets/hero-bg.png";
 
 export default function Hero() {
+  const benefits = [
+    "Hands-on Barista Training",
+    "100% Job Placement Support",
+    "Certified Barista Trainer"
+  ];
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
-      {/* Background Image with Dark Brown/Coffee Overlay */}
+    <section className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 overflow-hidden">
+      {/* Background Image with SEO Alt Text */}
       <div className="absolute inset-0 z-0">
         <img 
           src={heroBg}
-          alt="Steaming coffee cup with latte art" 
+          alt="Barista Training in Dhaka - Professional Coffee Machine Practice" 
           className="w-full h-full object-cover"
+          loading="eager"
         />
-        <div className="absolute inset-0 bg-[#140d0a]/80 backdrop-blur-[2px]"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#140d0a] via-[#140d0a]/50 to-transparent"></div>
+        <div className="absolute inset-0 bg-[#0d0907]/85 backdrop-blur-[1px]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0d0907]"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 text-center relative z-10 w-full mt-10 md:mt-0">
-        {/* Big Red Badge */}
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-red-600 text-white text-sm md:text-lg font-bold uppercase tracking-widest mb-8 shadow-[0_0_30px_rgba(220,38,38,0.6)] border border-red-500/50"
-        >
-          <Tag className="w-5 h-5 fill-current" />
-          <span>30% OFF!</span>
-        </motion.div>
-
+      <div className="max-w-7xl mx-auto px-6 text-center relative z-10 w-full">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="flex justify-center mb-6"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-8"
         >
-          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant text-sm md:text-base font-bold shadow-lg border border-primary/20">
-            <Star className="w-4 h-4 md:w-5 md:h-5 fill-current text-primary-container" />
-            <span>Professional Barista Training Academy Dhaka</span>
-          </div>
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+          </span>
+          Barista Course Dhaka 2026
         </motion.div>
 
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-[clamp(2.5rem,5vw,4.5rem)] font-serif font-bold text-on-surface mb-8 leading-[1.3] max-w-5xl mx-auto drop-shadow-2xl"
+          transition={{ delay: 0.1 }}
+          className="text-[clamp(2.2rem,5vw,4rem)] font-serif font-bold text-on-surface mb-8 leading-[1.2] max-w-4xl mx-auto"
         >
-          Professional Barista Course in Dhaka 2026 - <br/>
-          <span className="text-secondary-fixed">আপনার ক্যারিয়ার</span> শুরু হোক <span className="text-primary bg-[#140d0a]/60 px-4 py-2 rounded-2xl inline-block mt-2 md:mt-0 backdrop-blur-md border border-primary/30">প্রফেশনাল বারিস্তা</span> হিসেবে
+          Best Barista Training Course in Dhaka <br />
+          <span className="text-primary">ঢাকায় প্রফেশনাল বারিস্তা কোর্স</span>
         </motion.h1>
 
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-[clamp(1.1rem,3vw,1.5rem)] text-on-surface-variant max-w-3xl mx-auto mb-12 leading-[1.6] font-medium drop-shadow-md"
+          transition={{ delay: 0.2 }}
+          className="text-[clamp(1rem,2vw,1.2rem)] text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed font-medium"
         >
-          Hands-on training, real coffee machines, এবং অভিজ্ঞ প্রশিক্ষকের মাধ্যমে সম্পূর্ণ Barista কোর্স যা আপনাকে বিশ্বমানের দক্ষতায় গড়ে তুলবে।
+          Start your professional career with world-class Barista training in Bangladesh. Learn espresso extraction, latte art, and cafe management from industry experts in Dhaka.
         </motion.p>
+
+        {/* Benefits List */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+          className="flex flex-wrap justify-center gap-6 mb-12"
+        >
+          {benefits.map((benefit, i) => (
+            <div key={i} className="flex items-center gap-2 text-on-surface/90 font-semibold text-sm md:text-base">
+              <CheckCircle className="w-5 h-5 text-primary" />
+              <span>{benefit}</span>
+            </div>
+          ))}
+        </motion.div>
 
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          transition={{ delay: 0.4 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-5"
         >
-          <button className="w-full sm:w-auto bg-primary hover:bg-primary-container text-white px-10 py-4 rounded-xl text-lg font-bold shadow-xl shadow-primary/30 transition-all hover:-translate-y-1">
-            Enroll Now
-          </button>
-          <button className="w-full sm:w-auto bg-surface-container-highest/80 backdrop-blur-md border border-outline-variant text-on-surface px-10 py-4 rounded-xl text-lg font-bold hover:bg-surface-container-low transition-all hover:border-primary">
-            View Courses
+          <button className="w-full sm:w-auto bg-primary hover:bg-primary-container text-white px-12 py-4 rounded-xl text-lg font-bold shadow-2xl shadow-primary/40 transition-all hover:-translate-y-1 flex items-center justify-center gap-2 group">
+            Enroll Now (বুকিং করুন)
+            <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
           </button>
         </motion.div>
       </div>

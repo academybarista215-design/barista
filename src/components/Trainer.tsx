@@ -11,7 +11,7 @@ export default function Trainer() {
   ];
 
   return (
-    <section className="py-24 bg-[#140d0a] relative overflow-hidden" id="trainer">
+    <section className="py-24 bg-[#110a08] relative overflow-hidden" id="trainer">
       {/* Decorative Background Elements */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
@@ -24,7 +24,7 @@ export default function Trainer() {
             viewport={{ once: true }}
             className="text-primary font-bold tracking-widest uppercase text-sm mb-4"
           >
-            Mentorship
+            Certified Barista Trainer in Dhaka
           </motion.p>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -33,7 +33,7 @@ export default function Trainer() {
             transition={{ delay: 0.1 }}
             className="text-[clamp(2rem,5vw,3rem)] font-serif font-bold text-on-surface mb-4"
           >
-            Meet Your Trainer
+            Meet Your Trainer — <span className="text-primary">প্রশিক্ষকের সাথে পরিচিত হোন</span>
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -42,7 +42,7 @@ export default function Trainer() {
             transition={{ delay: 0.2 }}
             className="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto"
           >
-            Learn from an experienced professional barista
+            Learn from an experienced professional barista in Bangladesh. বারিস্তা হিসেবে ক্যারিয়ার শুরু করার সেরা দিকনির্দেশনা পান।
           </motion.p>
         </div>
 

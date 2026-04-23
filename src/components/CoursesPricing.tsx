@@ -30,7 +30,7 @@ export default function CoursesPricing() {
   const activeCourses = isAccommodation ? withAccommodation : withoutAccommodation;
 
   return (
-    <section className="py-24 bg-[#140d0a] relative overflow-hidden" id="courses">
+    <section className="py-24 bg-[#110a08] relative overflow-hidden" id="courses">
       {/* Subtle Background Icon */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03] pointer-events-none">
         <Coffee className="w-[600px] h-[600px] text-white" />
@@ -44,7 +44,7 @@ export default function CoursesPricing() {
             viewport={{ once: true }}
             className="text-primary font-bold tracking-widest uppercase text-sm mb-4"
           >
-            Pricing Plans
+            Barista Course Dhaka Price
           </motion.p>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -53,7 +53,7 @@ export default function CoursesPricing() {
             transition={{ delay: 0.1 }}
             className="text-[clamp(2.2rem,5vw,3.5rem)] font-serif font-bold text-on-surface mb-6"
           >
-            Our Barista Courses
+            Barista Course Fee & Pricing — <span className="text-primary">কোর্সের ফি</span>
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -62,7 +62,7 @@ export default function CoursesPricing() {
             transition={{ delay: 0.2 }}
             className="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto mb-12"
           >
-            Choose the perfect course to start your career
+            আপনার ক্যারিয়ারের জন্য সঠিক Coffee Training Course বেছে নিন। Choose the perfect barista course in Dhaka.
           </motion.p>
 
           {/* Toggle Switch */}
