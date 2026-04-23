@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowRight, Phone, MessageSquare } from "lucide-react";
+import { ArrowRight, Phone, MessageSquare, MessageCircle } from "lucide-react";
 
 export default function CTA() {
   return (
@@ -23,7 +23,7 @@ export default function CTA() {
               Registration is Going On
             </motion.div>
             
-            <h2 className="text-[clamp(2.5rem,6vw,4.5rem)] font-serif font-bold text-on-surface mb-8 leading-[1.1] max-w-4xl mx-auto">
+            <h2>
               Start Your <span className="text-primary italic">Barista Career</span> Today
             </h2>
             
@@ -32,14 +32,18 @@ export default function CTA() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <motion.button 
-                whileHover={{ scale: 1.05, y: -5 }}
+              <motion.a 
+                href="https://wa.me/8801701959331?text=I%20want%20to%20join%20your%20Barista%20Training%20Course.%20Please%20give%20me%20details."
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full sm:w-auto bg-primary hover:bg-primary-container text-white px-12 py-5 rounded-2xl text-xl font-bold shadow-3xl shadow-primary/30 transition-all flex items-center justify-center gap-3 group"
+                className="btn-primary w-full sm:w-auto text-xl py-5"
               >
+                <MessageCircle className="w-6 h-6 fill-current" />
                 Enroll Now (30% OFF)
                 <ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-1" />
-              </motion.button>
+              </motion.a>
               
               <div className="flex items-center gap-4">
                 <a href="tel:01701959331" className="p-4 rounded-2xl bg-white/5 border border-white/10 text-on-surface hover:bg-primary/10 hover:border-primary/30 transition-all">

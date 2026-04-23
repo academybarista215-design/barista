@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { MessageCircle } from "lucide-react";
 import logo from "../assets/logo.png";
 
 export default function Navbar() {
@@ -25,13 +26,17 @@ export default function Navbar() {
           <a href="#" className="text-on-surface-variant hover:text-primary transition-colors duration-300">Contact</a>
         </div>
 
-        <motion.button 
+        <motion.a 
+          href="https://wa.me/8801701959331?text=I%20want%20to%20join%20your%20Barista%20Training%20Course.%20Please%20give%20me%20details."
+          target="_blank"
+          rel="noopener noreferrer"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-primary text-white px-8 py-2.5 rounded-xl font-bold shadow-lg shadow-primary/20 hover:bg-primary-container transition-colors"
+          className="bg-primary text-white px-8 py-2.5 rounded-xl font-bold shadow-lg shadow-primary/20 hover:bg-primary-container transition-colors flex items-center gap-2"
         >
+          <MessageCircle className="w-4 h-4 fill-current" />
           Enroll Now
-        </motion.button>
+        </motion.a>
       </div>
     </nav>
   );

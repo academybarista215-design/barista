@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Check, Clock, Phone, MapPin, Star, Flame, Coffee } from "lucide-react";
+import { Check, Clock, Phone, MapPin, Star, Flame, Coffee, MessageCircle } from "lucide-react";
 
 interface Course {
   id: number;
@@ -51,7 +51,6 @@ export default function CoursesPricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-[clamp(2.2rem,5vw,3.5rem)] font-serif font-bold text-on-surface mb-6"
           >
             Barista Course Fee & Pricing — <span className="text-primary">কোর্সের ফি</span>
           </motion.h2>
@@ -85,7 +84,7 @@ export default function CoursesPricing() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <AnimatePresence mode="wait">
             {activeCourses.map((course, index) => (
               <motion.div
@@ -95,7 +94,7 @@ export default function CoursesPricing() {
                 exit={{ opacity: 0, scale: 0.9, y: -20 }}
                 transition={{ duration: 0.3, delay: index * 0.1 }}
                 whileHover={{ y: -10 }}
-                className={`relative group p-8 rounded-[2rem] border transition-all duration-300 ${
+                className={`relative group p-8 rounded-[2rem] border transition-all duration-300 flex flex-col h-full ${
                   course.popular 
                     ? 'bg-gradient-to-b from-[#2a1a14] to-[#1c100b] border-primary/50 shadow-[0_0_40px_rgba(255,107,0,0.15)]' 
                     : 'bg-[#1c100b] border-white/5 hover:border-primary/30'
@@ -112,47 +111,53 @@ export default function CoursesPricing() {
                   <div className="p-3 rounded-2xl bg-primary/10 border border-primary/20">
                     <Coffee className="w-6 h-6 text-primary" />
                   </div>
-                  <span className="bg-red-500/10 text-red-500 text-[10px] font-bold px-3 py-1 rounded-full border border-red-500/20">
+                  <span className="bg-red-500 text-white text-[10px] font-bold px-3 py-1 rounded-full shadow-lg shadow-red-500/20">
                     30% OFF
                   </span>
                 </div>
 
-                <h3 className="text-xl font-bold text-on-surface mb-2 group-hover:text-primary transition-colors">
+                <h3 className="text-2xl font-bold text-on-surface mb-2 group-hover:text-primary transition-colors">
                   {course.name}
                 </h3>
                 
                 <div className="flex items-center gap-2 text-on-surface-variant text-sm mb-6">
-                  <Clock className="w-4 h-4" />
-                  <span>{course.duration} Duration</span>
+                  <Clock className="w-4 h-4 text-primary" />
+                  <span className="font-medium">{course.duration} Course</span>
                 </div>
 
-                <div className="mb-8">
-                  <p className="text-on-surface-variant text-sm line-through decoration-red-500/50 mb-1">
+                <div className="mb-8 mt-auto">
+                  <p className="text-on-surface-variant/60 text-sm line-through mb-1">
                     {course.originalPrice}
                   </p>
-                  <p className="text-3xl font-black text-primary">
+                  <p className="text-4xl font-black text-primary">
                     {course.discountedPrice}
                   </p>
                 </div>
 
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center gap-2 text-sm text-on-surface-variant">
-                    <Check className="w-4 h-4 text-primary" />
-                    <span>Hands-on Practice</span>
+                <ul className="space-y-3 mb-10">
+                  <li className="flex items-center gap-3 text-sm text-on-surface-variant">
+                    <Check className="w-4 h-4 text-primary flex-shrink-0" />
+                    <span>Hands-on Machine Practice</span>
                   </li>
-                  <li className="flex items-center gap-2 text-sm text-on-surface-variant">
-                    <Check className="w-4 h-4 text-primary" />
-                    <span>Certificate Provided</span>
+                  <li className="flex items-center gap-3 text-sm text-on-surface-variant">
+                    <Check className="w-4 h-4 text-primary flex-shrink-0" />
+                    <span>Professional Certificate</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-sm text-on-surface-variant">
+                    <Check className="w-4 h-4 text-primary flex-shrink-0" />
+                    <span>Job Placement Support</span>
                   </li>
                 </ul>
 
-                <button className={`w-full py-4 rounded-xl font-bold transition-all ${
-                  course.popular 
-                    ? 'bg-primary text-white shadow-lg shadow-primary/30 hover:bg-primary-container' 
-                    : 'bg-surface-container-highest text-on-surface hover:bg-primary hover:text-white'
-                }`}>
+                <a 
+                  href={`https://wa.me/8801701959331?text=I%20want%20to%20join%20the%20${encodeURIComponent(course.name)}%20Barista%20Training%20Course.%20Please%20give%20me%20details.`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary w-full"
+                >
+                  <MessageCircle className="w-5 h-5 fill-current" />
                   Enroll Now
-                </button>
+                </a>
               </motion.div>
             ))}
           </AnimatePresence>

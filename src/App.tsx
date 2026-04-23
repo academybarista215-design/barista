@@ -9,54 +9,49 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Stats from "./components/Stats";
 import CoursesPricing from "./components/CoursesPricing";
-import AboutSection from "./components/AboutSection";
-import Mentorship from "./components/Mentorship";
 import Trainer from "./components/Trainer";
+import TrainingGallery from "./components/TrainingGallery";
 import WhyChooseUs from "./components/WhyChooseUs";
-import BlogSection from "./components/BlogSection";
-import FAQ from "./components/FAQ";
-import Reviews from "./components/Reviews";
 import CTA from "./components/CTA";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import SectionCTA from "./components/SectionCTA";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-[#0d0907] selection:bg-primary/30 selection:text-primary relative font-sans antialiased text-on-surface">
       <Navbar />
 
-      <main className="flex flex-col">
-        {/* 1. Hero - H1 keyword: "Best Barista Training Course in Dhaka" */}
+      <main className="flex flex-col gap-0">
+        {/* 1. Hero Section */}
         <Hero />
 
-        {/* 2. Trust Indicators */}
+        {/* 2. Trust Section */}
         <Stats />
+
+        {/* CTA 1 */}
+        <SectionCTA />
 
         {/* 3. Courses & Pricing */}
         <CoursesPricing />
 
-        {/* 4. About / Local SEO + Map */}
-        <AboutSection />
-
-        {/* 5. Mentorship Section */}
-        <Mentorship />
-
-        {/* 6. Trainer Section */}
+        {/* 4. Trainer Section */}
         <Trainer />
 
-        {/* 7. Why Choose Us */}
+        {/* 5. Training Gallery */}
+        <TrainingGallery />
+
+        {/* 6. Why Choose Us */}
         <WhyChooseUs />
 
-        {/* 8. Blog / Content SEO */}
-        <BlogSection />
+        {/* CTA 3 */}
+        <SectionCTA />
 
-        {/* 9. FAQ */}
-        <FAQ />
-
-        {/* 10. Testimonials */}
-        <Reviews />
-
-        {/* 11. Final CTA */}
+        {/* 7. Final CTA */}
         <CTA />
+
+        {/* 8. Contact & Location */}
+        <Contact />
       </main>
 
       <Footer />
@@ -76,20 +71,27 @@ export default function App() {
           <Phone className="w-6 h-6" />
         </motion.a>
 
-        <motion.a
-          href="https://wa.me/8801701959331"
-          target="_blank"
-          rel="noopener noreferrer"
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className="bg-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center justify-center border border-white/10"
-          title="WhatsApp Barista Academy"
-          aria-label="Chat on WhatsApp"
-        >
-          <MessageCircle className="w-6 h-6 fill-current" />
-        </motion.a>
+        <div className="relative group">
+          <motion.a
+            href="https://wa.me/8801701959331?text=I%20want%20to%20join%20your%20Barista%20Training%20Course.%20Please%20give%20me%20details."
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="bg-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center justify-center border border-white/10"
+            title="WhatsApp Barista Academy"
+            aria-label="Chat on WhatsApp"
+          >
+            <MessageCircle className="w-6 h-6 fill-current" />
+          </motion.a>
+          
+          {/* Tooltip */}
+          <div className="absolute right-full mr-4 top-1/2 -translate-y-1/2 px-4 py-2 rounded-xl bg-[#1c100b] border border-white/10 text-white text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-2xl">
+            Chat with us on WhatsApp
+          </div>
+        </div>
       </div>
     </div>
   );

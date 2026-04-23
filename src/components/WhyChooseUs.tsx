@@ -45,7 +45,6 @@ export default function WhyChooseUs() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-[clamp(2rem,4vw,3rem)] font-serif font-bold text-on-surface mb-6"
           >
             Best Environment for <span className="text-primary">Professional Coffee Training</span> — কেন আমাদের বেছে নেবেন?
           </motion.h2>
@@ -86,13 +85,6 @@ export default function WhyChooseUs() {
               </div>
             </motion.div>
           ))}
-        </div>
-
-        {/* CTA after section */}
-        <div className="mt-20 text-center">
-          <button className="bg-primary hover:bg-primary-container text-white px-10 py-4 rounded-xl text-lg font-bold shadow-xl shadow-primary/30 transition-all hover:-translate-y-1">
-            Start Your Barista Career Today
-          </button>
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { CheckCircle, Award, Star, Quote } from "lucide-react";
+import { CheckCircle, Award, Star, Quote, MessageCircle } from "lucide-react";
 import trainerImg from "../assets/trainer.png";
 
 export default function Trainer() {
@@ -31,7 +31,6 @@ export default function Trainer() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-[clamp(2rem,5vw,3rem)] font-serif font-bold text-on-surface mb-4"
           >
             Meet Your Trainer — <span className="text-primary">প্রশিক্ষকের সাথে পরিচিত হোন</span>
           </motion.h2>
@@ -115,9 +114,15 @@ export default function Trainer() {
             </div>
 
             <div className="pt-6">
-              <button className="bg-primary hover:bg-primary-container text-white px-12 py-4 rounded-xl text-lg font-bold shadow-xl shadow-primary/30 transition-all hover:-translate-y-1 w-full sm:w-auto">
-                Join Training
-              </button>
+              <a 
+                href="https://wa.me/8801701959331?text=I%20want%20to%20join%20your%20Barista%20Training%20Course.%20Please%20give%20me%20details."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary w-full sm:w-auto"
+              >
+                <MessageCircle className="w-5 h-5 fill-current" />
+                Join Training Today
+              </a>
             </div>
 
             {/* Student Testimonial Snippet */}

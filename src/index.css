@@ -6,22 +6,31 @@
   --font-sans: "Manrope", sans-serif;
 
   /* Dark Brown Leather / Coffee Theme with Orange Accents */
-  --color-primary: #f97316; /* Orange accent */
-  --color-primary-container: #ea580c; /* Darker orange */
-  --color-secondary-container: #432818; /* Dark roasted coffee */
-  --color-tertiary: #bb9457; /* Light brown / latte */
-  
-  --color-surface: #140d0a; /* Very dark espresso base */
-  --color-surface-container-low: #221612; 
-  --color-surface-container-highest: #38241d; 
-  
+  --color-primary: #f97316;
+  /* Orange accent */
+  --color-primary-container: #ea580c;
+  /* Darker orange */
+  --color-secondary-container: #432818;
+  /* Dark roasted coffee */
+  --color-tertiary: #bb9457;
+  /* Light brown / latte */
+
+  --color-surface: #140d0a;
+  /* Very dark espresso base */
+  --color-surface-container-low: #221612;
+  --color-surface-container-highest: #38241d;
+
   --color-outline-variant: #5a3d31;
-  
-  --color-on-surface: #fdf8f5; /* Creamy white text */
-  --color-on-surface-variant: #d4bdae; /* Muted creamy text */
-  
-  --color-secondary-fixed: #fb923c; /* Light orange */
-  --color-on-secondary-fixed-variant: #1c100b; /* Dark text on bright bg */
+
+  --color-on-surface: #fdf8f5;
+  /* Creamy white text */
+  --color-on-surface-variant: #d4bdae;
+  /* Muted creamy text */
+
+  --color-secondary-fixed: #fb923c;
+  /* Light orange */
+  --color-on-secondary-fixed-variant: #1c100b;
+  /* Dark text on bright bg */
 
   --radius-xl: 1.5rem;
   --radius-2xl: 2rem;
@@ -31,5 +40,35 @@
 @layer base {
   body {
     @apply bg-surface text-on-surface font-sans antialiased;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-family: var(--font-serif);
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-family: var(--font-serif);
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    @apply text-on-surface-variant leading-relaxed;
+  }
+
+  section {
+    @apply py-24;
+    /* 96px - matches 80px-100px range */
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-container text-white px-10 py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-primary/30 hover:-translate-y-1 active:translate-y-0 flex items-center justify-center gap-2;
   }
 }

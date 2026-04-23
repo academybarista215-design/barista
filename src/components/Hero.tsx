@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { CheckCircle, ArrowRight } from "lucide-react";
+import { CheckCircle, ArrowRight, MessageCircle } from "lucide-react";
 import heroBg from "../assets/hero-bg.png";
 
 export default function Hero() {
@@ -36,21 +36,21 @@ export default function Hero() {
           Barista Course Dhaka 2026
         </motion.div>
 
-        <motion.h1 
+        <h1 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="text-[clamp(2.2rem,5vw,4rem)] font-serif font-bold text-on-surface mb-8 leading-[1.2] max-w-4xl mx-auto"
+          className="mb-8 max-w-4xl mx-auto"
         >
           Best Barista Training Course in Dhaka <br />
           <span className="text-primary">ঢাকায় প্রফেশনাল বারিস্তা কোর্স</span>
-        </motion.h1>
+        </h1>
 
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-[clamp(1rem,2vw,1.2rem)] text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed font-medium"
+          className="text-[clamp(1.1rem,2vw,1.3rem)] text-on-surface-variant max-w-2xl mx-auto mb-12 font-medium"
         >
           Start your professional career with world-class Barista training in Bangladesh. Learn espresso extraction, latte art, and cafe management from industry experts in Dhaka.
         </motion.p>
@@ -76,10 +76,16 @@ export default function Hero() {
           transition={{ delay: 0.4 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-5"
         >
-          <button className="w-full sm:w-auto bg-primary hover:bg-primary-container text-white px-12 py-4 rounded-xl text-lg font-bold shadow-2xl shadow-primary/40 transition-all hover:-translate-y-1 flex items-center justify-center gap-2 group">
+          <a 
+            href="https://wa.me/8801701959331?text=I%20want%20to%20join%20your%20Barista%20Training%20Course.%20Please%20give%20me%20details."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary w-full sm:w-auto"
+          >
+            <MessageCircle className="w-5 h-5 fill-current" />
             Enroll Now (বুকিং করুন)
             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-          </button>
+          </a>
         </motion.div>
       </div>
     </section>

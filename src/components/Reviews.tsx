@@ -40,7 +40,6 @@ export default function Reviews() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-[clamp(2rem,4vw,3rem)] font-serif font-bold text-on-surface"
           >
             What Our <span className="text-primary italic">Students</span> Say
           </motion.h2>

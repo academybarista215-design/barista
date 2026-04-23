@@ -82,7 +82,7 @@ export default function Mentorship() {
                 transition={{ delay: 0.1 }}
                 className="text-[clamp(2.2rem,5vw,3.5rem)] font-serif font-bold text-on-surface mb-6 leading-tight"
               >
-                1-on-1 Mentorship <br />
+                1-on-1 Mentorship Support <br />
                 <span className="text-primary italic">১-অন-১ মেন্টরশিপ সাপোর্ট</span>
               </motion.h2>
               <motion.p 
@@ -92,7 +92,7 @@ export default function Mentorship() {
                 transition={{ delay: 0.2 }}
                 className="text-on-surface-variant text-lg leading-relaxed max-w-xl"
               >
-                আমরা শুধু কোর্স করাই না, আমরা আপনার সফল ক্যারিয়ার নিশ্চিত করতে ব্যক্তিগত মেন্টরশিপ প্রদান করি। বাস্তব অভিজ্ঞতার প্রতিটি ধাপে আমরা আছি আপনার সাথে।
+                Get personalized guidance from industry experts to accelerate your barista career. We don't just teach; we mentor you to success with real-world experience and professional insights.
               </motion.p>
             </div>
 
@@ -124,8 +124,8 @@ export default function Mentorship() {
               transition={{ delay: 0.6 }}
               className="pt-4"
             >
-              <button className="bg-primary hover:bg-primary-container text-white px-10 py-4 rounded-xl text-lg font-bold shadow-xl shadow-primary/30 transition-all hover:-translate-y-1">
-                Get Mentorship
+              <button className="btn-primary w-full sm:w-auto">
+                Start Your Journey
               </button>
             </motion.div>
           </div>
