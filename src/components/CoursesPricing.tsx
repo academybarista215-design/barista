@@ -84,7 +84,7 @@ export default function CoursesPricing() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex overflow-x-auto pb-8 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 no-scrollbar">
           <AnimatePresence mode="wait">
             {activeCourses.map((course, index) => (
               <motion.div
@@ -94,7 +94,7 @@ export default function CoursesPricing() {
                 exit={{ opacity: 0, scale: 0.9, y: -20 }}
                 transition={{ duration: 0.3, delay: index * 0.1 }}
                 whileHover={{ y: -10 }}
-                className={`relative group p-8 rounded-[2rem] border transition-all duration-300 flex flex-col h-full ${
+                className={`relative group p-8 rounded-[2rem] border transition-all duration-300 flex flex-col h-full flex-shrink-0 w-[280px] md:w-auto snap-center ${
                   course.popular 
                     ? 'bg-gradient-to-b from-[#2a1a14] to-[#1c100b] border-primary/50 shadow-[0_0_40px_rgba(255,107,0,0.15)]' 
                     : 'bg-[#1c100b] border-white/5 hover:border-primary/30'

@@ -71,4 +71,12 @@
   .btn-primary {
     @apply bg-primary hover:bg-primary-container text-white px-10 py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-primary/30 hover:-translate-y-1 active:translate-y-0 flex items-center justify-center gap-2;
   }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }

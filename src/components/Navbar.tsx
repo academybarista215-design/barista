@@ -20,10 +20,11 @@ export default function Navbar() {
         </div>
         
         <div className="hidden md:flex items-center gap-8 font-serif tracking-tight">
-          <a href="#" className="text-primary font-bold border-b-2 border-primary">Home</a>
-          <a href="#" className="text-on-surface-variant hover:text-primary transition-colors duration-300">Courses</a>
-          <a href="#" className="text-on-surface-variant hover:text-primary transition-colors duration-300">About Us</a>
-          <a href="#" className="text-on-surface-variant hover:text-primary transition-colors duration-300">Contact</a>
+          <a href="#home" className="text-on-surface-variant hover:text-primary transition-colors duration-300">Home</a>
+          <a href="#courses" className="text-on-surface-variant hover:text-primary transition-colors duration-300">Courses</a>
+          <a href="#gallery" className="text-on-surface-variant hover:text-primary transition-colors duration-300">Gallery</a>
+          <a href="#why-choose-us" className="text-on-surface-variant hover:text-primary transition-colors duration-300">About Us</a>
+          <a href="#contact" className="text-on-surface-variant hover:text-primary transition-colors duration-300">Contact</a>
         </div>
 
         <motion.a 
