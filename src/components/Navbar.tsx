@@ -6,17 +6,12 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-[#140d0a]/80 backdrop-blur-xl border-b border-white/5">
       <div className="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center">
           <img 
             src={logo} 
-            alt="Professional Barista Training Academy Dhaka - Barista Course Mirpur" 
-            className="h-12 w-auto object-contain"
+            alt="Professional Barista Training Academy" 
+            className="h-14 w-14 object-cover rounded-full border-2 border-primary/20 shadow-lg"
           />
-          <div className="hidden lg:block">
-            <h2 className="text-white font-serif font-bold text-sm leading-tight uppercase tracking-wider">
-              Professional Barista<br/><span className="text-primary">Training Academy</span>
-            </h2>
-          </div>
         </div>
         
         <div className="hidden md:flex items-center gap-8 font-serif tracking-tight">

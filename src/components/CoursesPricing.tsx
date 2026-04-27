@@ -84,7 +84,7 @@ export default function CoursesPricing() {
           </div>
         </div>
 
-        <div className="flex overflow-x-auto pb-8 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 no-scrollbar">
+        <div className="flex overflow-x-auto pt-6 pb-8 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 no-scrollbar">
           <AnimatePresence mode="wait">
             {activeCourses.map((course, index) => (
               <motion.div
@@ -231,7 +231,7 @@ export default function CoursesPricing() {
               <div className="flex gap-0.5">
                 {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-3 h-3 fill-yellow-500 text-yellow-500" />)}
               </div>
-              <span className="text-xs font-bold text-on-surface-variant">500+ Students Certified</span>
+              <span className="text-xs font-bold text-on-surface-variant">1000+ Students Certified</span>
             </div>
           </div>
         </div>

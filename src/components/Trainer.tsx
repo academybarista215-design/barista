@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
-import { CheckCircle, Award, Star, Quote, MessageCircle } from "lucide-react";
-import trainerImg from "../assets/trainer.png";
+import { CheckCircle, Award, MessageCircle } from "lucide-react";
+import trainerImg from "../../image/trainer-image/589342043_122190437894562541_2105035134245038683_n.jpg";
 
 export default function Trainer() {
   const features = [
@@ -54,11 +54,11 @@ export default function Trainer() {
             className="relative group"
           >
             <div className="absolute inset-0 bg-primary/20 rounded-[2.5rem] rotate-3 transition-transform group-hover:rotate-6 duration-500"></div>
-            <div className="relative overflow-hidden rounded-[2.5rem] aspect-[4/5] border border-white/10 shadow-2xl">
+            <div className="relative overflow-hidden rounded-[2.5rem] aspect-[3/2] border border-white/10 shadow-2xl">
               <img 
                 src={trainerImg} 
                 alt="Professional Barista Trainer" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#140d0a] via-transparent to-transparent opacity-60"></div>
               
@@ -125,29 +125,7 @@ export default function Trainer() {
               </a>
             </div>
 
-            {/* Student Testimonial Snippet */}
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.6 }}
-              className="mt-6 p-6 rounded-3xl bg-surface-container-low border border-white/5 relative"
-            >
-              <Quote className="text-primary/10 w-16 h-16 absolute top-4 right-4" />
-              <div className="flex gap-1 mb-3">
-                {[...Array(5)].map((_, i) => <Star key={i} className="w-3 h-3 fill-yellow-500 text-yellow-500" />)}
-              </div>
-              <p className="text-on-surface-variant italic text-sm md:text-base leading-relaxed mb-4 relative z-10">
-                "Rayhan Sir-এর হাত ধরে কফি মেকিং শেখা আমার জন্য সেরা অভিজ্ঞতা ছিল। উনার শেখানোর কৌশল খুবই চমৎকার।"
-              </p>
-              <div className="flex items-center gap-3 relative z-10">
-                <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary border border-primary/20">S</div>
-                <div>
-                  <p className="text-sm font-bold text-on-surface">Sumit Hassan</p>
-                  <p className="text-[10px] uppercase tracking-widest text-primary/70">Ex-Student</p>
-                </div>
-              </div>
-            </motion.div>
+
           </motion.div>
         </div>
       </div>

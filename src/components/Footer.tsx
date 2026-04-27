@@ -10,8 +10,8 @@ export default function Footer() {
         <div className="md:col-span-5 flex flex-col items-center md:items-start gap-6 text-center md:text-left">
           <img 
             src={logo} 
-            alt="Professional Barista Training Academy Dhaka - Best Barista Course in Bangladesh" 
-            className="h-16 w-auto object-contain"
+            alt="Professional Barista Training Academy" 
+            className="h-20 w-20 object-cover rounded-full border-2 border-primary/20 shadow-xl"
           />
           <p className="text-on-surface-variant text-base max-w-sm leading-relaxed font-medium">
             Professional Barista Training Academy (ESTD 2024). <br/> 
