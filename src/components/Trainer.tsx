@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { CheckCircle, Award, MessageCircle } from "lucide-react";
-import trainerImg from "../../image/trainer-image/589342043_122190437894562541_2105035134245038683_n.jpg";
+import trainerImg from "../assets/trainer-official.jpg";
 
 export default function Trainer() {
   const features = [
@@ -86,7 +86,7 @@ export default function Trainer() {
             className="flex flex-col gap-6"
           >
             <div className="space-y-2">
-              <h3 className="text-[clamp(2.2rem,4vw,3.5rem)] font-bold text-on-surface leading-tight">Md. Rayhan Ahmed</h3>
+              <h3 className="text-[clamp(2.2rem,4vw,3.5rem)] font-bold text-on-surface leading-tight">সোহেল মাহমুদ (Sohel Mahmud)</h3>
               <p className="text-primary text-xl md:text-2xl font-bold tracking-wide">Head Barista & Certified Trainer</p>
             </div>
 
