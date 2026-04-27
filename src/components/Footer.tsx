@@ -1,4 +1,3 @@
-import { Mail, MessageCircle, Instagram, Facebook } from "lucide-react";
 import logo from "../assets/logo.png";
 
 export default function Footer() {
@@ -33,25 +32,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Social & Contact */}
-        <div className="md:col-span-4 flex flex-col items-center md:items-end gap-8 text-center md:text-right">
-          <div className="flex flex-col items-center md:items-end gap-4">
-            <h4 className="text-on-surface font-bold text-lg">Join Our Community</h4>
-            <div className="flex gap-4">
-              <a href="#" className="w-12 h-12 rounded-2xl bg-[#1c100b] flex items-center justify-center border border-white/5 hover:border-primary/50 hover:bg-primary/10 transition-all text-on-surface-variant hover:text-primary">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-12 h-12 rounded-2xl bg-[#1c100b] flex items-center justify-center border border-white/5 hover:border-primary/50 hover:bg-primary/10 transition-all text-on-surface-variant hover:text-primary">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-12 h-12 rounded-2xl bg-[#1c100b] flex items-center justify-center border border-white/5 hover:border-primary/50 hover:bg-primary/10 transition-all text-on-surface-variant hover:text-primary">
-                <MessageCircle className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-12 h-12 rounded-2xl bg-[#1c100b] flex items-center justify-center border border-white/5 hover:border-primary/50 hover:bg-primary/10 transition-all text-on-surface-variant hover:text-primary">
-                <Mail className="w-5 h-5" />
-              </a>
-            </div>
-          </div>
+        {/* Contact */}
+        <div className="md:col-span-4 flex flex-col items-center md:items-end gap-8 text-center md:text-right self-center">
           <div className="flex flex-col items-center md:items-end gap-1">
             <p className="text-on-surface font-semibold">Mirpur-11, Dhaka</p>
             <p className="text-on-surface-variant text-sm">House-21, Road-01, Block-B, Mirpur-11, Dhaka-1216</p>
