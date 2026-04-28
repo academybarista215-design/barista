@@ -1,4 +1,4 @@
-import { Star, Users, GraduationCap, Briefcase } from "lucide-react";
+import { Star, Users, GraduationCap, Briefcase, Coffee } from "lucide-react";
 import { motion } from "motion/react";
 
 export default function Stats() {
@@ -10,10 +10,10 @@ export default function Stats() {
       sub: "Success Stories"
     },
     { 
-      value: "4.9/5", 
-      label: "User Rating", 
-      icon: <Star className="w-5 h-5 fill-yellow-500 text-yellow-500" />,
-      sub: "Google Reviews"
+      value: "100%", 
+      label: "Hands-on", 
+      icon: <Coffee className="w-5 h-5 text-primary" />,
+      sub: "Machine Practice"
     },
     { 
       value: "95%", 
