@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 export default function Stats() {
   const stats = [
     { 
-      value: "1000+", 
+      value: "3000+", 
       label: "Students Trained", 
       icon: <Users className="w-5 h-5 text-primary" />,
       sub: "Success Stories"
@@ -22,7 +22,7 @@ export default function Stats() {
       sub: "Industry Rate"
     },
     { 
-      value: "5+ Years", 
+      value: "15+ Years", 
       label: "Experience", 
       icon: <GraduationCap className="w-5 h-5 text-primary" />,
       sub: "Expert Mentorship"

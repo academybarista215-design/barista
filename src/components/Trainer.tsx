@@ -4,10 +4,11 @@ import trainerImg from "../assets/trainer-official.jpg";
 
 export default function Trainer() {
   const features = [
-    "5+ Years Experience",
-    "Certified Barista Trainer",
-    "Hands-on Training Expert",
-    "Latte Art Specialist"
+    "15+ Years Professional Experience",
+    "Worked in 5-Star & 4-Star Hotels",
+    "Experience with International Coffee Chains",
+    "Worked at Dhaka Club Limited",
+    "Expert in Latte Art & Espresso Techniques"
   ];
 
   return (
@@ -32,7 +33,7 @@ export default function Trainer() {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            Meet Your Trainer — <span className="text-primary">প্রশিক্ষকের সাথে পরিচিত হোন</span>
+            Meet Your Trainer
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -41,7 +42,6 @@ export default function Trainer() {
             transition={{ delay: 0.2 }}
             className="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto"
           >
-            Learn from an experienced professional barista in Bangladesh. বারিস্তা হিসেবে ক্যারিয়ার শুরু করার সেরা দিকনির্দেশনা পান।
           </motion.p>
         </div>
 
@@ -91,8 +91,8 @@ export default function Trainer() {
             </div>
 
             <p className="text-on-surface-variant text-lg md:text-xl leading-[1.8] font-medium">
-              ৫+ বছরের অভিজ্ঞতা সম্পন্ন একজন প্রফেশনাল বারিস্তা, যিনি বহু শিক্ষার্থীকে সফলভাবে প্রশিক্ষণ দিয়েছেন। বাস্তব অভিজ্ঞতার মাধ্যমে সহজভাবে শেখানোই তার লক্ষ্য। <br className="hidden md:block" />
-              Expert in espresso extraction, milk texturing, and coffee shop management.
+              আমাদের প্রধান ট্রেইনার একজন অত্যন্ত অভিজ্ঞ প্রফেশনাল বারিস্তা, যার <strong className="text-primary">১৫+ বছরের</strong> বাস্তব অভিজ্ঞতা রয়েছে। তিনি ফাইভ স্টার হোটেল, ফোর স্টার হোটেল, ইন্টারন্যাশনাল কফি চেইন এবং বিভিন্ন ক্লাবে কাজ করার অভিজ্ঞতা অর্জন করেছেন। <br className="mt-4 block" />
+              বিশেষভাবে তিনি <strong>Dhaka Club Limited</strong>-এ কাজ করেছেন, যেখানে তিনি প্রফেশনাল পরিবেশে কফি সার্ভিস ও ট্রেনিং দিয়েছেন। তার এই বাস্তব অভিজ্ঞতার মাধ্যমে তিনি শিক্ষার্থীদের হাতে-কলমে প্রশিক্ষণ প্রদান করেন।
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4">
@@ -121,7 +121,7 @@ export default function Trainer() {
                 className="btn-primary w-full sm:w-auto"
               >
                 <MessageCircle className="w-5 h-5 fill-current" />
-                Join Training Today
+                Enroll Now
               </a>
             </div>
 

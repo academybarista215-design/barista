@@ -1,13 +1,19 @@
 import { motion } from "motion/react";
+import studentImg1 from "../assets/students/30b89021-a341-4f8e-a740-26a13b31287a.jpg";
+import studentImg2 from "../assets/students/70bce8f1-62d3-4455-aaa5-9001b881ae90.jpg";
+import studentImg3 from "../assets/students/892de618-dae6-498f-b300-b5e6bcc324aa.jpg";
+import studentImg4 from "../assets/students/c0f1baf7-5f93-4046-8e14-b0d01a95949a.jpg";
+import studentImg5 from "../assets/students/d5375d48-0ecc-42ba-9558-50ba25d6b530.jpg";
+import studentImg6 from "../assets/students/dfdb39ea-aecc-419c-85ce-3cab780813e6.jpg";
 
 export default function TrainingGallery() {
   const images = [
-    { src: "/barista-training-dhaka-1.jpg", alt: "Barista training in Dhaka - student practicing latte art" },
-    { src: "/barista-training-dhaka-2.jpg", alt: "Barista training in Dhaka - espresso machine training" },
-    { src: "/coffee-training-student-1.jpg", alt: "Barista training in Dhaka - student hands-on session" },
-    { src: "/coffee-training-student-2.jpg", alt: "Barista training in Dhaka - milk steaming practice" },
-    { src: "/barista-hands-on-1.jpg", alt: "Barista training in Dhaka - coffee grinder calibration" },
-    { src: "/barista-hands-on-2.jpg", alt: "Barista training in Dhaka - professional espresso extraction" },
+    { src: studentImg1, alt: "Barista student hands-on training session at academy" },
+    { src: studentImg2, alt: "Professional coffee brewing and espresso extraction practice" },
+    { src: studentImg3, alt: "Latte art and milk steaming technique training" },
+    { src: studentImg4, alt: "Students learning barista skills on commercial espresso machines" },
+    { src: studentImg5, alt: "Advanced coffee preparation and grinder calibration" },
+    { src: studentImg6, alt: "Practical barista exam and skill evaluation session" },
   ];
 
   const containerVariants = {

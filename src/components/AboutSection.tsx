@@ -37,7 +37,7 @@ export default function AboutSection() {
                 <strong className="text-on-surface">Professional Barista Training Academy</strong> is Dhaka's leading coffee training institute, located in Mirpur-11. We offer comprehensive <strong className="text-primary">barista courses in Dhaka</strong> designed for beginners and working professionals who want to build a career in the coffee industry.
               </p>
               <p>
-                আমাদের একাডেমি বাংলাদেশের সেরা বারিস্তা ট্রেনিং সেন্টার, যেখানে আপনি হাতে-কলমে শিখতে পারবেন এস্প্রেসো মেকিং, লাতে আর্ট, ক্যাপুচিনো, মকটেইল তৈরি এবং কফি শপ ম্যানেজমেন্ট। আমাদের <strong className="text-primary">বারিস্তা কোর্সে</strong> ৫০০+ শিক্ষার্থী সফলভাবে প্রশিক্ষণ নিয়েছেন।
+                আমাদের একাডেমি বাংলাদেশের সেরা বারিস্তা ট্রেনিং সেন্টার, যেখানে আপনি হাতে-কলমে শিখতে পারবেন এস্প্রেসো মেকিং, লাতে আর্ট, ক্যাপুচিনো, মকটেইল তৈরি এবং কফি শপ ম্যানেজমেন্ট। আমাদের <strong className="text-primary">বারিস্তা কোর্সে</strong> ৩০০০+ শিক্ষার্থী সফলভাবে প্রশিক্ষণ নিয়েছেন।
               </p>
               <p>
                 Our <strong className="text-on-surface">Barista Training in Dhaka</strong> covers everything from espresso machine operation and milk texturing to latte art and café management. Whether you're a coffee enthusiast or a career changer, our hands-on curriculum gets you job-ready fast.
