@@ -8,12 +8,12 @@ import studentImg6 from "../assets/students/dfdb39ea-aecc-419c-85ce-3cab780813e6
 
 export default function TrainingGallery() {
   const images = [
-    { src: studentImg1, alt: "Barista student hands-on training session at academy" },
-    { src: studentImg2, alt: "Professional coffee brewing and espresso extraction practice" },
-    { src: studentImg3, alt: "Latte art and milk steaming technique training" },
-    { src: studentImg4, alt: "Students learning barista skills on commercial espresso machines" },
-    { src: studentImg5, alt: "Advanced coffee preparation and grinder calibration" },
-    { src: studentImg6, alt: "Practical barista exam and skill evaluation session" },
+    { src: studentImg1, alt: "Our student working in a premium café in Malta" },
+    { src: studentImg2, alt: "Barista success story: Working in a high-end restaurant in Australia" },
+    { src: studentImg3, alt: "Former student now a professional barista in Cyprus" },
+    { src: studentImg4, alt: "Success in Europe: Our trainee at a specialty coffee shop" },
+    { src: studentImg5, alt: "Professional barista career in the Middle East" },
+    { src: studentImg6, alt: "Global opportunities: Our student working in a luxury hotel in Canada" },
   ];
 
   const containerVariants = {
@@ -41,7 +41,7 @@ export default function TrainingGallery() {
             viewport={{ once: true }}
             className="text-primary font-bold tracking-[0.3em] uppercase text-xs mb-4"
           >
-            Real Training Moments
+            Student Success
           </motion.p>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -50,7 +50,7 @@ export default function TrainingGallery() {
             transition={{ delay: 0.1 }}
             className="text-white"
           >
-            Hands-on <span className="text-primary italic">Training Gallery</span> — বাস্তব প্রশিক্ষণ এক নজরে
+            Our Students <span className="text-primary italic">Worldwide</span>
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -59,7 +59,7 @@ export default function TrainingGallery() {
             transition={{ delay: 0.2 }}
             className="text-on-surface-variant max-w-2xl mx-auto text-lg mt-4"
           >
-            আমাদের আধুনিক একাডেমিতে শিক্ষার্থীদের সরাসরি প্রশিক্ষণের কিছু স্থিরচিত্র। 
+            আমাদের শিক্ষার্থীরা এখন Malta, Cyprus, Europe, Australia সহ বিভিন্ন দেশে সফলভাবে কাজ করছে। 
           </motion.p>
         </div>
 
@@ -91,6 +91,16 @@ export default function TrainingGallery() {
             </motion.div>
           ))}
         </motion.div>
+
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
+          className="text-on-surface-variant text-center mt-12 font-medium italic"
+        >
+          Our students are now working in international cafés, hotels, and restaurants.
+        </motion.p>
       </div>
     </section>
   );

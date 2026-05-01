@@ -36,15 +36,14 @@ export default function Hero() {
           Barista Course Dhaka 2026
         </motion.div>
 
-        <h1 
+        <motion.h1 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
           className="mb-8 max-w-4xl mx-auto"
         >
-          Best Barista Training Course in Dhaka <br />
-          <span className="text-primary">ঢাকায় প্রফেশনাল বারিস্তা কোর্স</span>
-        </h1>
+          Professional Barista Training Academy in Dhaka
+        </motion.h1>
 
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
@@ -52,7 +51,8 @@ export default function Hero() {
           transition={{ delay: 0.2 }}
           className="text-[clamp(1.1rem,2vw,1.3rem)] text-on-surface-variant max-w-2xl mx-auto mb-12 font-medium"
         >
-          Start your professional career with world-class Barista training in Bangladesh. Learn espresso extraction, latte art, and cafe management from industry experts in Dhaka.
+          Learn coffee skills with expert trainers and real hands-on experience. <br />
+          <span className="text-primary/90">অভিজ্ঞ ট্রেইনারের মাধ্যমে হাতে-কলমে বারিস্তা ট্রেনিং নিন</span>
         </motion.p>
 
         {/* Benefits List */}
