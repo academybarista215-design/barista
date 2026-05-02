@@ -128,7 +128,7 @@ export default function CoursesPricing() {
             viewport={{ once: true }}
             className="text-primary font-bold tracking-[0.4em] uppercase text-xs mb-6"
           >
-            Course Fees & Pricing 2026
+            Course Fees & Pricing 2024
           </motion.p>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}

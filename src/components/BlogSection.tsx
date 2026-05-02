@@ -12,8 +12,8 @@ const posts = [
     tagColor: "bg-primary/20 text-primary border-primary/30"
   },
   {
-    title: "Barista Salary in Dhaka 2026 – What to Expect",
-    titleBn: "ঢাকায় বারিস্তার বেতন ২০২৬ সালে",
+    title: "Barista Salary in Dhaka 2024 – What to Expect",
+    titleBn: "ঢাকায় বারিস্তার বেতন ২০২৪ সালে",
     excerpt: "ঢাকার ক্যাফে ও রেস্তোরাঁয় একজন বারিস্তার গড় বেতন কত? অভিজ্ঞতার সাথে কীভাবে বাড়ে income — জানুন বিস্তারিত।",
     author: "Rayhan Ahmed",
     readTime: "4 min read",
