@@ -17,6 +17,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import SectionCTA from "./components/SectionCTA";
 
+import VideoTestimonials from "./components/VideoTestimonials";
+
 export default function App() {
   return (
     <div className="min-h-screen bg-[#0d0907] selection:bg-primary/30 selection:text-primary relative font-sans antialiased text-on-surface">
@@ -43,6 +45,9 @@ export default function App() {
 
         {/* 6. Why Choose Us */}
         <WhyChooseUs />
+
+        {/* 6.5 Video Testimonials */}
+        <VideoTestimonials />
 
         {/* CTA 3 */}
         <SectionCTA />
