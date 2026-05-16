@@ -137,7 +137,7 @@ export default function CoursesPricing() {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-6xl font-black text-white mb-8 tracking-tight"
           >
-            Professional <span className="text-primary italic">Barista Training</span> Fees
+            Our <span className="text-primary italic">Courses</span>
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -146,7 +146,7 @@ export default function CoursesPricing() {
             transition={{ delay: 0.2 }}
             className="text-on-surface-variant text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
           >
-            আপনার বাজেটের মধ্যে সেরা কোর্সটি বেছে নিন। প্রতিটি কোর্সে পাচ্ছেন সরাসরি হাতে-কলমে প্র্যাকটিস এবং ১০০% জব গ্যারান্টি।
+            Choose the best <span className="text-primary">Professional Barista Course</span> in Bangladesh. We offer hands-on training at our <span className="text-primary">Coffee Training Academy</span> in Dhaka.
           </motion.p>
         </div>
 

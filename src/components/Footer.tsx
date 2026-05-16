@@ -14,10 +14,10 @@ export default function Footer() {
           />
           <p className="text-on-surface-variant text-base max-w-sm leading-relaxed font-medium">
             Professional Barista Training Academy (ESTD 2024). <br/> 
-            ঢাকার সেরা কারিগরি প্রশিক্ষণ কেন্দ্র যেখানে আমরা আধুনিক পন্থায় বারিস্তা প্রশিক্ষণ প্রদান করি।
+            The leading Barista Training Academy in Dhaka providing professional coffee training.
           </p>
           <div className="text-on-surface-variant text-sm mt-4 opacity-60">
-            © ২০২৪-২০২৬ বারিস্টা ট্রেনিং একাডেমি। <br className="md:hidden"/> All rights reserved.
+            © 2024-2026 Professional Barista Training Academy. <br className="md:hidden"/> All rights reserved.
           </div>
         </div>
 

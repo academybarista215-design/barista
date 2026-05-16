@@ -111,7 +111,7 @@ export default function VideoTestimonials() {
             transition={{ delay: 0.1 }}
             className="text-on-surface"
           >
-            Hear from our students about their <span className="text-primary">learning experience</span> and why they believe our academy stands out.
+            Student <span className="text-primary italic">Success Stories</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

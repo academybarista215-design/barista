@@ -42,6 +42,7 @@ export default function Trainer() {
             transition={{ delay: 0.2 }}
             className="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto"
           >
+            Get the best <span className="text-primary">Barista Training in Dhaka</span> from a seasoned professional with international expertise.
           </motion.p>
         </div>
 

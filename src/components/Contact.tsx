@@ -21,7 +21,7 @@ export default function Contact() {
             transition={{ delay: 0.1 }}
             className="text-[clamp(2.2rem,5vw,3.5rem)] font-serif font-bold text-on-surface mb-6"
           >
-            Contact & Location — <span className="text-primary">আমাদের ঠিকানা</span>
+            Professional <span className="text-primary italic">Barista Training Academy</span> in Dhaka
           </motion.h2>
         </div>
 
@@ -93,7 +93,7 @@ export default function Contact() {
             className="h-full min-h-[450px] rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl relative"
           >
             <iframe
-              title="Barista Training Academy Location - Mirpur-11 Dhaka"
+              title="Professional Barista Training Academy Location in Dhaka"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.15383921226!2d90.3665091!3d23.8131568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1b52e37e951%3A0xc367098e987c6999!2sBarista%20Training%20Academy!5e0!3m2!1sen!2sbd!4v1713878000000!5m2!1sen!2sbd"
               width="100%"
               height="100%"

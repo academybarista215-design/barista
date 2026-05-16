@@ -70,8 +70,8 @@ export default function App() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           className="bg-primary text-white p-4 rounded-full shadow-2xl flex items-center justify-center border border-white/10"
-          title="Call Barista Academy Dhaka"
-          aria-label="Call Barista Training Academy"
+          title="Call Professional Barista Training Academy"
+          aria-label="Call Professional Barista Training Academy"
         >
           <Phone className="w-6 h-6" />
         </motion.a>
@@ -86,8 +86,8 @@ export default function App() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             className="bg-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center justify-center border border-white/10"
-            title="WhatsApp Barista Academy"
-            aria-label="Chat on WhatsApp"
+            title="WhatsApp Professional Barista Training Academy"
+            aria-label="Chat with Professional Barista Training Academy on WhatsApp"
           >
             <MessageCircle className="w-6 h-6 fill-current" />
           </motion.a>

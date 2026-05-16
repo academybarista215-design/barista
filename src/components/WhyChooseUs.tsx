@@ -46,7 +46,7 @@ export default function WhyChooseUs() {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            Best Environment for <span className="text-primary">Professional Coffee Training</span> — কেন আমাদের বেছে নেবেন?
+            Why Students <span className="text-primary italic">Choose Us</span>
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}

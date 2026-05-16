@@ -3,11 +3,6 @@ import { CheckCircle, ArrowRight, MessageCircle } from "lucide-react";
 import heroBg from "../assets/hero-bg.png";
 
 export default function Hero() {
-  const benefits = [
-    "Hands-on Barista Training",
-    "100% Job Placement Support",
-    "Certified Barista Trainer"
-  ];
 
   return (
     <section id="home" className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 overflow-hidden">
@@ -51,8 +46,8 @@ export default function Hero() {
           transition={{ delay: 0.2 }}
           className="text-[clamp(1.1rem,2vw,1.3rem)] text-on-surface-variant max-w-2xl mx-auto mb-12 font-medium"
         >
-          Learn coffee skills with expert trainers and real hands-on experience. <br />
-          <span className="text-primary/90">অভিজ্ঞ ট্রেইনারের মাধ্যমে হাতে-কলমে বারিস্তা ট্রেনিং নিন</span>
+          Join our <span className="text-primary">Professional Barista Course</span> for hands-on training with expert trainers and secure international career opportunities. <br />
+          <span className="text-primary/90">অভিজ্ঞ ট্রেইনারের মাধ্যমে সরাসরি কফি শপে হাতে-কলমে বারিস্তা ট্রেনিং নিন</span>
         </motion.p>
 
         {/* Benefits List */}
@@ -62,7 +57,11 @@ export default function Hero() {
           transition={{ delay: 0.3 }}
           className="flex flex-wrap justify-center gap-6 mb-12"
         >
-          {benefits.map((benefit, i) => (
+          {[
+            "Hands-on Barista Training in Dhaka",
+            "Expert International Trainers",
+            "100% International Career Support"
+          ].map((benefit, i) => (
             <div key={i} className="flex items-center gap-2 text-on-surface/90 font-semibold text-sm md:text-base">
               <CheckCircle className="w-5 h-5 text-primary" />
               <span>{benefit}</span>
