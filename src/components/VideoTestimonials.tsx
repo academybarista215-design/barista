@@ -36,7 +36,6 @@ function VideoCard({ url, label, description, index }: { url: string; label: str
           className="w-full h-full object-cover"
           controls={isPlaying} // Only show native controls when playing to avoid UI clash
           preload="metadata"
-          loading="lazy"
           playsInline
           onPlay={() => setIsPlaying(true)}
           onPause={() => setIsPlaying(false)}
